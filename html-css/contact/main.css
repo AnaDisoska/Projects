@@ -1,0 +1,594 @@
+* {
+    box-sizing: border-box;
+}
+
+body, h1,h2,h3,h4,h5,h6,p,ul,ul li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.black {
+    background-color: #313131;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+}
+
+.contact p {
+    padding-right: 30px;
+    text-transform: uppercase;
+
+}
+
+.contact .fa-phone {
+    padding-right: 20px;
+    color: red;
+}
+
+.contact .fa-facebook-f, .contact .fa-instagram {
+    margin-right: 10px;
+}
+
+.contact .fa-facebook-f, .contact .fa-instagram, .contact .fa-linkedin-in {
+    border-radius: 50%;
+    background-color: rgb(219, 219, 219);
+    color: black;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.left .left-list {
+display: flex;
+list-style-type: none;
+
+
+}
+
+.left .left-list li {
+    padding-right: 20px;
+
+}
+
+.left .left-list li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.left .left-list li a:hover {
+    color: red;
+}
+
+.right .right-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.right .right-list li {
+    padding-left: 20px;
+}
+
+.right .right-list li a {
+    text-decoration: none;
+    color: red;
+    text-transform: uppercase;
+}
+
+.right .right-list li a:hover {
+    color: black;
+}
+
+
+
+
+
+.left-list li:last-child {
+    position: relative;
+}
+
+.left-list li:last-child::after {
+    content:'';
+    width: 100%;
+    display: block;
+    background-color: red;
+    height: 5px;
+    position: absolute;
+    top: 35px;
+}
+
+.big-img {
+    background-image: url("main-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+}
+
+.big-img .img-text  {
+   color: white;
+   text-transform: uppercase;
+   font-size: 45px;
+   margin-top: 10%;
+   text-align: center;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.offices, .main-text {
+    flex: 1;
+}
+
+.main-text {
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.main-text h3 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.main-text p {
+    font-size: 22px;
+}
+.main-input {
+    flex: 1.5;
+}
+
+
+.offices h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: red;
+}
+
+.offices {
+    border-right: 2px solid red;
+}
+
+.offices img {
+    width: 150px;
+}
+
+.off-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.off-1 p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.main-input {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(226, 226, 226);
+    margin-top: -119px;
+}
+
+.main-input h2 {
+    text-transform: uppercase;
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.main-input input {
+    width: 80%;
+    margin: 30px auto;
+    height: 50px;
+    padding-left: 20px;
+    
+}
+
+.main-input textarea {
+    height: 150px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.main-input p {
+    width: 70%;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.main-input textarea {
+    padding: 20px;
+}
+
+.contact-info {
+ display: flex;
+ background-color: rgb(224, 224, 224);
+ justify-content: space-around;
+ margin-top: 40px;
+}
+
+
+.contact-info .info {
+    margin-top: 50px;
+}
+
+.contact-info .info h3 {
+    margin: 20px 0;
+}
+
+.map {
+    position: relative;
+}
+.map .red {
+    width: 350px;
+    background-color: rgba(255, 25, 25, 0.8);
+    padding: 30px;
+    position: absolute;
+    left: 150px;
+    top: 100px;
+    height: 250px;
+}
+
+.map .red h3, .map .red h4, .map .red p {
+    color: white;
+}
+
+.map .red h4 {
+    margin-bottom: 20px;
+}
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+footer p {
+    color: white;
+    text-transform: uppercase;
+}
+
+.hide {
+    display: none;
+}
+
+.popup {
+    background-color: lightgray;
+    color: red;
+    width: 200px;
+    position: absolute;
+    left: -100px;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+
+}
+
+.off-1:hover .popup {
+    display: block;
+}
+.off-1 {
+    position: relative;
+    
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    
+
+   
+
+    .container{
+        width: 100%;
+    } 
+
+    .contact i {
+        display: none;
+    }
+
+    .contact {
+        justify-content: space-around;
+        padding: 5px;
+    }
+
+    .menu {
+        display: none;
+    }
+    .container {
+        position: relative;
+    }
+    .hide  {
+        display: inline-block;
+      
+        
+    }
+
+    .hide i {
+        font-size: 25px;
+       
+    }
+
+    .hide:hover  ul {
+        display: block;
+    }
+
+    .hide ul {
+        list-style-type: none;
+        background-color: lightgray;
+        display: none; 
+        position: absolute;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .hide ul li a {
+        text-decoration: none;
+        color: red;
+        text-transform: capitalize;
+        font-size: 20px;
+        
+    }
+
+    .big-img {
+        height: 150px;
+    }
+
+    .img-text h1 {
+        font-size: 50px;
+    }
+    .main-content {
+        flex-direction: column;
+        
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+  
+    .offices {
+        border-right: unset;
+    }
+
+    .main-text h3 {
+        text-align: center;
+    }
+    .main-input {
+        margin-top: 20px;
+        flex: unset;
+    }
+  
+    .contact-info {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+  
+    iframe {
+        width: 100%;
+    }
+
+    .map .red {
+        width: 200px;
+       
+        top: 100px;
+        left: 50px
+    }
+
+
+    .off-1:hover .popup {
+        display: none;
+    }
+    
+
+
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+    .container{
+        width: 100%;
+    } 
+
+    .contact i {
+        display: none;
+    }
+
+    .contact {
+        justify-content: space-around;
+        padding: 5px;
+    }
+
+    .menu {
+        display: none;
+    }
+    .container {
+        position: relative;
+    }
+    .hide  {
+        display: inline-block;
+      
+        
+    }
+
+    .hide i {
+        font-size: 25px;
+       
+    }
+
+    .hide:hover  ul {
+        display: block;
+    }
+
+    .hide ul {
+        list-style-type: none;
+        background-color: lightgray;
+        display: none; 
+        position: absolute;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .hide ul li a {
+        text-decoration: none;
+        color: red;
+        text-transform: capitalize;
+        font-size: 20px;
+        
+    }
+
+    .big-img {
+        height: 150px;
+    }
+
+    .img-text h1 {
+        font-size: 50px;
+    }
+    .main-content {
+        flex-direction: column;
+        
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+  
+    .offices {
+        border-right: unset;
+    }
+
+    .main-text h3 {
+        text-align: center;
+    }
+    .main-input {
+        margin-top: 20px;
+        flex: unset;
+    }
+  
+    .contact-info {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+  
+    iframe {
+        width: 100%;
+    }
+
+    .map .red {
+        width: 200px;
+       
+        top: 100px;
+        left: 50px
+    }
+
+    .popup {
+       
+        left: 50px;
+        
+    
+    }
+
+    .main-text {
+        text-align: center;
+        padding: 0 100px;
+    }
+
+
+    .main-input {
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    .off-1:hover .popup {
+        display: none;
+    }
+    
+}
+
+
+
+    
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    .big-img .img-text {
+        margin-top: 20%;
+    } 
+
+    .offices {
+        width: 50%
+    }
+
+    .main-text {
+        width: 50%;
+    }
+
+    .main-input {
+         margin-top: 10px;
+         width: 70%;
+         flex: unset;
+    }
+
+    .main-content {
+        flex-wrap: wrap;
+    }
+
+    .info {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    iframe {
+        width: 500px;
+    }
+
+    .map .red {
+        left: 100px;
+        width: 300px;
+    }
+
+    .off-1:hover .popup {
+        display: none;
+    }
+    
+}
