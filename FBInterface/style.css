@@ -1,0 +1,63 @@
+.main {
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+
+.left-side {
+    width: 20%;
+
+}
+
+
+.prof {
+    
+    margin-bottom: 20px;
+    width: 100%;
+    
+}
+
+
+.about {
+    height: 800px;
+    
+    background-color: gray; 
+    color: red;
+  }
+
+
+  .right-side {
+    width: 50%;
+  }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+   
+}
+
+.imageStyle {
+   
+    
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+}
+
+.posts {
+      
+      background-color: lightgray;
+}
+
+.news {
+    background-color: gray;
+    width: 80%;
+    height: 150px;
+    margin: 10px auto;
+
+}
