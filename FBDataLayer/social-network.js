@@ -7,8 +7,8 @@ function SocialNetwork(name) {
 
     this.generateNewUser = function(){
         for (var index = 1; index <= 50; index++) {
-            var aboutMe = new AboutMe('title-' + index, new Date());
-            var user = new User(index, aboutMe);
+            // var aboutMe = new AboutMe('title-' + index, new Date());
+            var user = new User(index);
             var eventNumber = getRandomNumber(0, this.events.length);
             user.register(this.events[eventNumber]);
             this.user.push(user);

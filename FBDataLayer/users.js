@@ -1,9 +1,10 @@
 function User(name, aboutMe) {
     this.name = name;
-    this.aboutMe = new AboutMe();
+    this.aboutMe = new Story();
      this.profilePictures = new Pictures();
     this.events = [];
     this.pictures = [];
+    this.stories = [];
     
  
 
@@ -20,10 +21,17 @@ function User(name, aboutMe) {
     
     }
 
+    this.generateStories = function() {
+        for (var index = 0; index < 5; index++) {
+            var story = new Story();
+            this.stories.push(story);
+        }
+    }
     
     
     
     // this.generateEvents();
-   
+    
     this.generatePictures();
+    this.generateStories();
 }

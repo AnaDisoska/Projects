@@ -19,6 +19,23 @@ function PageRenderer() {
         aboutMe.innerHTML = 'About me section'
         aboutMe.classList.add('about');
         leftSide.appendChild(aboutMe);
+
+
+        function zoom(event){
+            profilePic.style.width = '500px';
+            profilePic.style.width = '500px';
+ 
+            event.removeEventListener("mouseover", zoom, false);
+            
+        }
+
+        
+        profilePic.addEventListener('mouseover', function(event){
+            zoom();
+             
+           
+ 
+        })
     }
     this.renderRight = function() {
         var rightSide = document.createElement('div');
