@@ -55,11 +55,14 @@ function PageRenderer(user) {
         gallery.classList.add('gallery');
         rightSide.appendChild(gallery);
 
+        
+
 
         for (var index = 0; index < 10; index++) {
             var image = document.createElement('img');
             image.classList.add('imageStyle');
-            image.src = this.user.profilePictures.src;
+            image.src = this.user.pictures[index].src;
+            image.id = this.user.pictures[index].id;
             gallery.appendChild(image);
 
             image.addEventListener('click', function (event) {
@@ -74,27 +77,55 @@ function PageRenderer(user) {
         }
 
 
-
-
         var posts = document.createElement('div');
         posts.classList.add('posts');
         rightSide.appendChild(posts);
-
+       
 
         for (var index = 0; index < 5; index++) {
+           
+            var newsData = this.user.stories[index];
             var news = document.createElement('div');
+            news.id = newsData.id;
             news.classList.add('news');
-            // news.id = user.posts.id;
-
             posts.appendChild(news);
 
             var newsHeader = document.createElement('h1');
-            newsHeader.innerText = this.user.posts.header;
-            news.appendChild(newsHeader);
+            newsHeader.innerText = this.user.aboutMe.header;
+             news.appendChild(newsHeader);
 
             var newsParagraph = document.createElement('p');
-            newsParagraph.innerText = this.user.posts.paragraph;
+            newsParagraph.innerText = this.user.aboutMe.paragraph;
             news.appendChild(newsParagraph);
+
+            var newsButton = document.createElement('button');
+            newsButton.innerText = this.user.aboutMe.button;
+            news.appendChild(newsButton);
+
+            function removeElement(id) {
+                console.log(id);
+                var element = document.getElementById(id);  
+                element.parentNode.removeChild(element);
+                
+            }
+
+            newsButton.addEventListener('click', function(event){
+                console.log(event.target.parentNode);
+                removeElement(event.target.parentNode.id);
+            })
+
+            // function removeElement1() {
+            //     var element = document.getElementById(1);  
+            //     element.parentNode.removeChild(element)
+                
+            // }
+
+            // newsButton.addEventListener('click', function(event){
+            //     removeElement1(event);
+            // })
+
+
+            
 
 
         }
