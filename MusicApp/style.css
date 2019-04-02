@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ul li {
+    margin: 0;
+    padding: 0;
+}
+#main-container {
+    width: 70%;
+    margin: 0 auto;
+}
+#top {
+    border: 2px solid rgb(150, 150, 150);
+    display: flex;
+    background-color: rgb(255, 96, 96);
+}
+
+#left {
+    width: 50%;
+    /* border: 1px solid black; */
+    height: 500px;
+}
+
+#right {
+    width: 50%;
+    height: 500px;
+    /* border: 1px solid black; */
+    /* background-color: rgb(223, 116, 255); */
+}
+
+.nameHeader {
+    width: 100%;
+    /* background-color: rgb(216, 216, 216); */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 35px;
+    margin-top: 0;
+}
+
+.mainPic {
+    width: 80%;
+    margin: 30px auto;
+    /* background-color: rgb(255, 85, 113);
+    color: green; */
+    /* font-weight: bold; */
+    height: 400px;
+    display: block;
+}
+
+.sugg {
+    width: 90%;
+    /* background-color: black; */
+    margin: 8px auto;
+    display: flex;
+    justify-content: space-around;
+    height: 105px;
+
+}
+
+.suggImg {
+    width: 40%;
+    /* height: 100px; */
+    background-color: red;
+}
+
+.suggName {
+    width: 50%;
+    /* background-color: rgb(238, 68, 68); */
+    color: black;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    cursor: pointer;
+
+
+}
+
+#stats {
+   
+    background-color: rgb(0, 0, 0);
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.mainStats {
+    width: 40%;
+    /* background-color: rgb(255, 174, 187); */
+    
+    
+    
+}
+
+.statsHeader {
+    text-align: center;
+    color: rgb(255, 96, 96);
+    font-weight: bold;
+    font-size: 25px;
+        
+}
+
+.tags {
+    width: 60%;
+    
+    /* background-color: rgb(255, 97, 124); */
+    
+
+}
+
+.tagsHeader {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 96, 96);
+    font-size: 25px;
+}
+
+#bottom {
+    height: 400px;
+    /* background-color: rgb(128, 225, 255); */
+}
+
+#sum {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    height: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.btn {
+    /* position: absolute; */
+    background-color: gray;
+    color: rgb(255, 255, 255);
+    outline: none;
+    font-size: 15px;
+    padding: 5px;
+
+}
+
+.btn:hover {
+    color: red;
+    background-color: lightgray;
+}
+
+.cont {
+    display: none;
+    font-size: 20px;
+}
+
+.al {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(204, 204, 204);
+    font-size: 25px;
+
+}
+
+.album {
+    display: flex;
+}
+
+.left{
+    width: 50%;
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+.desc {
+    padding: 15px;
+    color: rgb(255, 96, 96);
+    background-color: rgb(204, 204, 204);
+}
