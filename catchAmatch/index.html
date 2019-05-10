@@ -1,0 +1,136 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>catchAmatch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+
+    
+</head>
+<body>
+    
+    <div class="main-part">
+        <div class="container">
+            <div class="login-form">
+                    
+                <h1>Welcome to <span class="new-line">catchAmatch</span></h1>
+                
+                <form>
+                        <fieldset>
+                    <input class="decorate" type="text" name="username" placeholder="Username" autocomplete="off">
+                    <input class="decorate"  type="text" name="password" placeholder="Password" autocomplete="off">
+                    <!-- <input type="radio" name="gender" value="male" checked> Male
+                    <input type="radio" name="gender" value="female"> Female -->
+                    <input class="greenBtn" type="button" value="Submit">
+
+                    <p class="new-account">Create a New <span class="account">ACCOUNT</span></p>
+                        </fieldset>
+                </form>
+            </div>
+
+
+            <div class="signup-form">
+                    
+                    <h1>Welcome to <span class="new-line">catchAmatch</span></h1>
+                    
+                    <form>
+                            <fieldset>
+                        <input class="decorate" id= "username" type="text" name="username" placeholder="Username" autocomplete="off">
+                        <input class="decorate" id= "pass"type="password" name="password" placeholder="New password">
+                        <input class="decorate" id= "mail" type="email" name="email" placeholder="E-mail" autocomplete="off">
+
+                        <div class="gender">
+                        <input class="radio" type="radio" name="gender" value="male" checked> Male
+                        <input class="radio" type="radio" name="gender" value="female"> Female
+                    </div>
+
+                    <div class="age">
+                     <span>Age: </span>   <select class="ageInput" aria-label="age" name="age" title="age">
+                               
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21" selected="1">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                                <option value="33">33</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+        
+        
+                            </select>
+                    </div>
+
+                        <input class="continue" type="button" value="Continue">
+    
+                            </fieldset>
+                    </form>
+                </div>
+
+
+                <div class="questions">
+                    <div class="q1">
+                    <p>Are you a beer person?</p>
+                    <input class="changeQuestion yes" type="radio" name="type1" value="yes"> <span><i class="fas fa-heart"></i></span>
+                            <input class="changeQuestion no" type="radio" name="type1" value="no"> <span><i class="fas fa-heart-broken"></i></span>
+                   </div>
+                   <div class="q2">
+                        <p>Do you like ice cream?</p>
+                        <input class="changeQuestion1 yes" type="radio" name="type2" value="yes"> <span><i class="fas fa-heart"></i></span>
+                            <input class="changeQuestion1 no" type="radio" name="type2" value="no"> <span><i class="fas fa-heart-broken"></i></span>
+                       </div>
+                       <div class="q3">
+                            <p>Are you easily bored?</p>
+                            <input class="changeQuestion2 yes" type="radio" name="type3" value="yes"> <span><i class="fas fa-heart"></i></span>
+                            <input class="changeQuestion2 no" type="radio" name="type3" value="no"> <span><i class="fas fa-heart-broken"></i></span>
+                           </div>
+                           <div class="q4">
+                                <p>Do you like reading books?</p>
+                                <input class="changeQuestion3 yes" type="radio" name="type4" value="yes"> <span><i class="fas fa-heart"></i></span>
+                            <input class="changeQuestion3 no" type="radio" name="type4" value="no"> <span><i class="fas fa-heart-broken"></i></span>
+                               </div>
+                               <div class="q5">
+                                    <p>All is fair in love and war?</p>
+                                    <input class="changeQuestion4 yes" type="radio" name="type5" value="yes"> <span><i class="fas fa-heart"></i></span>
+                            <input class="changeQuestion4 no" type="radio" name="type5" value="no"> <span><i class="fas fa-heart-broken"></i></span>
+                                   </div>
+                  
+                </div>
+
+
+              <div class="match">
+                  <div class="show-match-names">
+                    
+                  </div>
+              </div>
+
+
+        </div>
+
+    </div>
+    <script src="jquery.js"></script>
+    <script src="entities/user.js"></script>
+    <script src="business-layer/match-logic.js"></script>
+    <script src="presentation-layer/form-render.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

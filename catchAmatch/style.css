@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ul li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+body {
+    background-image: radial-gradient(circle, #ffffff, #fbf8ff, #faf0ff, #fbe7ff, #ffdefb);
+}
+
+.container {
+
+    position: relative;
+    
+}
+
+.login-form, .signup-form {
+    margin-top: 40px;
+    left: 37%;
+    width: 550px;
+    
+    position: absolute;
+    
+   
+}
+
+.login-form fieldset, .signup-form fieldset {
+    padding: 25px;
+    border-radius: 15px;
+    border: 3px solid rgb(255, 0, 98);
+}
+
+.login-form h1, .signup-form h1 {
+    text-align: center;
+    color: rgb(255, 0, 98);
+}
+
+.login-form form, .signup-form form {
+    margin-top: 20px;
+    
+   
+}
+
+.new-line {
+    display: block;
+}
+
+.login-form input, .signup-form input{
+   width: 80%;
+   display: block;
+   margin: 20px auto;
+   padding: 10px;
+   outline: none;
+   
+}
+
+.new-account {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(255, 0, 98);
+    margin-top: 50px;
+}
+
+.account {
+    background-color: rgb(206, 206, 206);
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.account:hover {
+    background-color: rgb(255, 0, 98);
+    color: white;
+}
+
+.gender, .age {
+    text-align: center;
+    font-size: 18px;
+}
+.gender input{
+    width: unset;
+    display: inline-block;
+}
+
+.signup-form {
+    display: none
+}
+
+
+.questions {
+    background-color: rgb(255, 0, 98);
+    height: 300px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 55px;
+    display: none;
+    color: white;
+    width: 550px;
+    margin: 100px auto;
+
+}
+
+.q1 {
+    position: absolute;
+    width: 30%;
+    top: 30%;
+    left: 35%;
+}
+
+.q2, .q3, .q4, .q5 {
+   position: absolute;
+   width: 30%;
+   top: 30%;
+   left: 35%;
+   display: none;
+}
+
+.questions p {
+    margin-bottom: 50px;
+}
+
+
+
+.continue, .greenBtn{
+    background-color: rgb(54, 211, 151);
+    border-radius: 15px;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.continue:hover, .greenBtn:hover {
+    background-color: rgb(0, 255, 157);
+    color: rgb(47, 0, 255);
+}
+
+.decorate {
+    background-color: rgb(220, 255, 242);
+}
+
+.match {
+    display: none;
+    background-image: linear-gradient(to right bottom, #ff00a6, #fe00b9, #f900cf, #ef00e6, #df00ff);
+    
+    margin: 100px auto;
+   
+}
+
+.show-match-names {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.yes {
+    position: absolute;
+    top: 105px;
+    left: 249;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.no {
+    position: absolute;
+    background-color: white;
+    top: 105px;
+    left: 292;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.questions span {
+    z-index: 9999999999999;
+}
+
+.yes:hover .fa-heart {
+    color: red;
+}

@@ -15,14 +15,19 @@ export function ArtistPageLogic() {
         var songNames = await this.artistRepo.getSongs(artistName);
         var songs = await this.songRepo.getSongInfo(artistName, songNames);
         
+        
         var pageData = {
             artistInfo: artistData,
             albumData: albums,
-            songData: songs
+            songData: songs,
+          
         };
 
         return pageData;
     }
-
+     
+    this.search = async function (searchPhrase) {
+        return await this.artistRepo.getSearchArtist(searchPhrase);
+    }
 
 }

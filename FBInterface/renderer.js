@@ -59,30 +59,31 @@ function PageRenderer(user) {
 
 
         for (var index = 0; index < 10; index++) {
-            var image = document.createElement('img');
-            image.classList.add('imageStyle');
-            image.src = this.user.pictures[index].src;
-            image.id = this.user.pictures[index].id;
-            gallery.appendChild(image);
+             var image = $('<img>').addClass('imageStyle').attr("src", this.user.pictures[index].src).attr('id', 'pic' + this.user.pictures[index].id);
+            //  var imageId = image[0].id;
 
-            image.addEventListener('click', function (event) {
-              if(event.target.style.width = '550px'){
-                  event.target.style.width = '150px';
-              }
-                    event.target.style.width = '550px';
-                    event.target.style.height = '550px';
-                
-            })
+             $(image).appendTo(gallery);
+            
+
+           
+                $(image).on("click", function(event) 
+            { 
+              $(this).width('200px').height('200px');
+            });
+            
 
         }
+        
 
-
+        // var post = $('<div>').addClass('posts').appendTo(posts);
         var posts = document.createElement('div');
         posts.classList.add('posts');
         rightSide.appendChild(posts);
        
 
         for (var index = 0; index < 5; index++) {
+
+            // var news = $('<div>').addClass('news').attr('id', 'post' + this.user.stories[index].id).appentTo(news);
            
             var newsData = this.user.stories[index];
             var news = document.createElement('div');
@@ -90,17 +91,28 @@ function PageRenderer(user) {
             news.classList.add('news');
             posts.appendChild(news);
 
+            // var newsHeader = ('h1').html(this.user.aboutMe.header).appendTo(newsHeader);
             var newsHeader = document.createElement('h1');
             newsHeader.innerText = this.user.aboutMe.header;
              news.appendChild(newsHeader);
 
+            // var newsParagraph = ('p').html(this.user.aboutMe.paragraph).appendTo(newsParagraph);
             var newsParagraph = document.createElement('p');
             newsParagraph.innerText = this.user.aboutMe.paragraph;
             news.appendChild(newsParagraph);
 
+            // var newsButton = ('button').html(this.user.aboutMe.button).appendTo(newsButton);
+
             var newsButton = document.createElement('button');
             newsButton.innerText = this.user.aboutMe.button;
             news.appendChild(newsButton);
+
+           
+            
+            // $(newsButton).on("click", function(event) 
+            // { 
+            //   $(this).remove(news);
+            // });
 
             function removeElement(id) {
                 console.log(id);
@@ -113,6 +125,19 @@ function PageRenderer(user) {
                 console.log(event.target.parentNode);
                 removeElement(event.target.parentNode.id);
             })
+           
+
+            // function removeElement(id) {
+            //     console.log(id);
+            //     var element = document.getElementById(id);  
+            //     element.parentNode.removeChild(element);
+                
+            // }
+
+            // newsButton.addEventListener('click', function(event){
+            //     console.log(event.target.parentNode);
+            //     removeElement(event.target.parentNode.id);
+            // })
 
             // function removeElement1() {
             //     var element = document.getElementById(1);  

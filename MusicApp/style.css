@@ -179,3 +179,14 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ul li {
     color: rgb(255, 96, 96);
     background-color: rgb(204, 204, 204);
 }
+
+header {
+   background-color: rgb(197, 197, 197)
+}
+
+header .search{
+    background-color: black;
+    padding: 5px;
+    outline: none;
+    color: white;
+}

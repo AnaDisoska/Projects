@@ -13,6 +13,24 @@ export function Renderer() {
     }
 
     this.renderTop = function (){
+        var header = $('<header>').attr('id', 'header').appendTo(this.mainContainer);
+        var input = $('<input>').addClass('search').attr('id', 'input').appendTo(header);
+        var sugg = $("<div>").attr("id", "suggestions").addClass("search").appendTo(this.mainContainer).hide;
+        var button = $('<button>').addClass('btnsearch').attr('id', 'srcbutton').html('Search').appendTo(header);
+
+
+        $("#srcbutton").on("click", (event) => {
+           event.preventDefault();
+           console.log("searching...");
+           this.init($("#inpit").val());
+
+        });
+
+        $('#searchInput').on('input', function () {
+            self.pageLogic.search($("#searchInput").val());
+
+        });
+
         var upperSide = $('<div>').attr('id', 'top').appendTo(this.mainContainer);
         var leftSide = $('<div>').attr('id', 'left').appendTo(upperSide);
         $('<h1>').addClass('nameHeader').html(this.pageData.artistInfo.name).appendTo(leftSide);

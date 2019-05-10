@@ -44,6 +44,27 @@ export function ArtistRepository() {
         }
     
     }
+
+    this.getSearchArtist =  async function (searchPhrase) {
+        var niza = [];
+        try {
+       
+            var response = await fetch("http://ws.audioscrobbler.com/2.0/?method=artist.search&artist="
+                + searchPhrase + "&api_key=6585771b0106345cbaa348c1bee13e2a&format=json");
+            var data = await response.json();
+            console.log("Response from getArtistInfo API", data);
+            for (var index = 0; index < 3; index++){
+                console.log( data.results.artistmatches.artist[index]);
+                niza.push(new Artist (data.results.artistmatches.artist[index]))
+
+            }
+    }
+          
+         catch (error) {
+            return error;
+        }
+    
+    }
     
 }
 
