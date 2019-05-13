@@ -14,7 +14,7 @@ function MatchingLogic(){
         var gender = $($("input[name='gender']:checked")[0]).val();
        if($(username).val() !=='' && $(pass).val() !=='' && $(email).val() !==''  && $(gender) !== '' && $(ageInput).val() !== ''){ 
           
-        this.currentUser = new User(username.val(), pass.val(), email.val(), gender, ageInput.val());
+        this.currentUser = new User(username.val(), pass.val(), email.val(), gender, ageInput.val());   
 
            $('.signup-form').css('display','none');
            $('.questions').css('display', 'block');
@@ -61,7 +61,7 @@ function MatchingLogic(){
 
         for (let index = 0; index < allUsers.length - 1; index++) {
 
-                 for (let secondIndex = index+1; secondIndex < allUsers.length; secondIndex++) {
+                 for (let secondIndex = index + 1; secondIndex < allUsers.length; secondIndex++) {
                  isItMatch = true;
 
                      for (let j = 0; j < allUsers[index].answeredQuestions.length; j++) {

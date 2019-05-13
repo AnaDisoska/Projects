@@ -1,13 +1,12 @@
 function Renderer() {
-       
-   
     var self = this;
     this.pageLogic = new MatchingLogic();
-    var matchedUsers = self.pageLogic.getMatches();
   
+    var questions = $('.questions');
+
         $('.account').click(function(){
-        $('.login-form').css('display', 'none');
-        $('.signup-form').css('display','block');
+            $('.login-form').css('display', 'none');
+            $('.signup-form').css('display','block');
        
         });
 
